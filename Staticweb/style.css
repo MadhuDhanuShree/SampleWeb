@@ -1,0 +1,50 @@
+body{
+    background-image: url(back1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    max-width: 100%;
+    text-align: center;
+}
+.container
+{
+    align-items: center;
+    color: white;
+    width: 300px;
+    border: 15px solid rgb(20, 170, 224);
+    padding: 50px;
+    margin-top: 300px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+.container1
+{
+    margin-top: 300px;
+    color: white;
+    width: 300px;
+    border: 15px solid rgb(20, 170, 224);
+    padding: 50px;
+    text-align: center;
+}
+h1,input[type="submit"]
+{
+    color: rgb(38, 172, 225);
+    text-align: center;
+}
+input[type="text"], input[type="email"], input[type="password"], select,input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+label {
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}

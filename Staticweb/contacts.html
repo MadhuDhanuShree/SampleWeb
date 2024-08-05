@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1>Register the form</h1>
+        <form>
+            <div class="form-group">
+                <label for="emailid">Email Id</label>
+                <input type="email" id="emailid" name="email" placeholder="Enter Email address" required>
+            </div>
+            <div class="form-group">
+                <label for="iname">Name</label>
+                <input type="text" id="iname" name="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="iage">Age</label>
+                <input type="number" id="iage" name="age" placeholder="Enter age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="1gender" name="nGender" required>
+                    <option value="">Select your Gender</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="npass" placeholder="Enter the password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submitbox" onclick="display()">
+                <a href="signin.html" target="_blank">Sign in</a>
+            </div>
+        </form>
+        <div id="disp" style="color:rgb(250, 253, 250); font-size: large;"></div>
+    </div>
+    </center>
+</body>
+<script>
+    function display() {
+        if(document.getElementById("male").checked) {
+            document.getElementById("disp").innerHTML = document.getElementById("male").value + " ratio button is checked !";
+        }
+        if(document.getElementById("female").checked) {
+            document.getElementById("disp").innerHTML = document.getElementById("female").value + " ratio button is checked !";
+        }
+    }
+</script>
+</html>
